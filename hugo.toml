@@ -1,4 +1,4 @@
-baseURL = 'http://blog.alper-celik.dev/'
+baseURL = 'https://blog.alper-celik.dev/'
 languageCode = 'en-us'
 title = "Alper Çelik's blog"
 theme = "theme"
