@@ -1,5 +1,5 @@
 ---
-title: "My First Contributions to nixpkgs and my experiences"
+title: "My First Contributions to nixpkgs and open source"
 date: 2023-04-21T01
 ---
 
