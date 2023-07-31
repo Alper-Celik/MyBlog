@@ -1,10 +1,10 @@
 {
   inputs = {
-    holy-theme = { url = "github:serkodev/holy"; flake = false; };
+    theme = { url = "github:serkodev/holy"; flake = false; };
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
     flake-utils.url = "github:numtide/flake-utils";
   };
-  outputs = { self, nixpkgs, flake-utils, holy-theme }@inputs:
+  outputs = { self, nixpkgs, flake-utils, theme }@inputs:
     flake-utils.lib.eachSystem
       (with flake-utils.lib ;
       [ system.x86_64-linux system.aarch64-linux ])
@@ -15,7 +15,7 @@
         {
           packages =
             let
-              blog = pkgs.callPackage ./default.nix { src = self; inherit holy-theme; };
+              blog = pkgs.callPackage ./default.nix { src = self; inherit theme; };
             in
             {
               blog = blog;
@@ -23,7 +23,7 @@
             };
           devshells =
             let
-              blog = pkgs.callPackage ./default.nix { src = self; inherit holy-theme; };
+              blog = pkgs.callPackage ./default.nix { src = self; inherit theme; };
             in
             {
               blog = blog;

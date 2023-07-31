@@ -18,22 +18,6 @@
         "type": "github"
       }
     },
-    "holy-theme": {
-      "flake": false,
-      "locked": {
-        "lastModified": 1687166492,
-        "narHash": "sha256-q6j6lSP9GPZRYD952CNV5tqsLIlAMQzbxR/xlrJFCqQ=",
-        "owner": "serkodev",
-        "repo": "holy",
-        "rev": "813c12d1d9ad2afd58505cfd33b9aabd3194730b",
-        "type": "github"
-      },
-      "original": {
-        "owner": "serkodev",
-        "repo": "holy",
-        "type": "github"
-      }
-    },
     "nixpkgs": {
       "locked": {
         "lastModified": 1690640159,
@@ -53,8 +37,8 @@
     "root": {
       "inputs": {
         "flake-utils": "flake-utils",
-        "holy-theme": "holy-theme",
-        "nixpkgs": "nixpkgs"
+        "nixpkgs": "nixpkgs",
+        "theme": "theme"
       }
     },
     "systems": {
@@ -69,6 +53,22 @@
       "original": {
         "owner": "nix-systems",
         "repo": "default",
+        "type": "github"
+      }
+    },
+    "theme": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1687166492,
+        "narHash": "sha256-q6j6lSP9GPZRYD952CNV5tqsLIlAMQzbxR/xlrJFCqQ=",
+        "owner": "serkodev",
+        "repo": "holy",
+        "rev": "813c12d1d9ad2afd58505cfd33b9aabd3194730b",
+        "type": "github"
+      },
+      "original": {
+        "owner": "serkodev",
+        "repo": "holy",
         "type": "github"
       }
     }

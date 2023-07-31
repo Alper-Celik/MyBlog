@@ -1,5 +1,4 @@
 baseURL = 'http://blog.alper-celik.dev/'
 languageCode = 'en-us'
 title = "Alper Çelik's blog"
-theme = "holy"
-# theme = ["github.com/manid2/hugo-xterm"]
+theme = "theme"
