@@ -23,6 +23,7 @@
   </div>
 
   <!-- comments -->
+  {{ if .IsPage }}
   <script
     src="https://giscus.app/client.js"
     data-repo="Alper-Celik/blog.alper-celik.dev"
@@ -40,4 +41,5 @@
     crossorigin="anonymous"
     async
   ></script>
+  {{ end }}
 </footer>
