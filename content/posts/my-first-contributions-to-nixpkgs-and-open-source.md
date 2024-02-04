@@ -1,6 +1,10 @@
 ---
 title: "My First Contributions to nixpkgs and open source"
 date: 2023-04-21T01
+comments:
+  host: infosec.exchange
+  username: Alper_Celik
+  id: 111873610151428752
 ---
 
 in this blogpost i hope to explain my experience of contributing to nixpkgs until this moment

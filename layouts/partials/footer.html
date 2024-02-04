@@ -1,5 +1,26 @@
 <footer>
   <br />
+  <!-- comments -->
+{{ with .Params.comments }}
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/2.4.1/purify.min.js" integrity="sha512-uHOKtSfJWScGmyyFr2O2+efpDx2nhwHU2v7MVeptzZoiC7bdF6Ny/CmZhN2AwIK1oCFiVQQ5DA/L9FSzyPNu6Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script type="module" src="https://cdn.jsdelivr.net/gh/dpecos/mastodon-comments@6fe36e7e308412cc02f26ae1477987a75d32e58f/mastodon-comments.js"></script>
+  <style>
+  @media (prefers-color-scheme: dark) {
+    mastodon-comments {
+      --font-color: #999FAD;
+      --block-background-color: #1C1E24;
+      --block-border-color: #0E1012;
+    }
+    a {
+      color: white;
+      text-decoration: underline;
+    }
+  }
+  </style>
+  <mastodon-comments host="{{ .host }}" user="{{ .username }}" tootId="{{ .id }}" ></mastodon-comments>
+  <br/>
+{{ end }}  
 
   <!-- license -->
   <div class="f:fade-40 f:14">
@@ -38,24 +59,4 @@
     >
   </div>
 
-  <!-- comments -->
-  {{ if .IsPage }}
-  <script
-    src="https://giscus.app/client.js"
-    data-repo="Alper-Celik/blog.alper-celik.dev"
-    data-repo-id="R_kgDOKBgsvw"
-    data-category="Comments"
-    data-category-id="DIC_kwDOKBgsv84CYPwh"
-    data-mapping="title"
-    data-strict="1"
-    data-reactions-enabled="1"
-    data-emit-metadata="0"
-    data-input-position="top"
-    data-theme="preferred_color_scheme"
-    data-lang="en"
-    data-loading="lazy"
-    crossorigin="anonymous"
-    async
-  ></script>
-  {{ end }}
 </footer>
