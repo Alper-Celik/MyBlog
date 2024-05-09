@@ -1,10 +1,10 @@
 ---
 title: "Using Free Tier Noip Dynamic Dns with Your Own Domain Name"
 date: 2024-05-09
-# comments:
-#   host: infosec.exchange
-#   username: Alper_Celik
-#   id: 0
+comments:
+  host: infosec.exchange
+  username: Alper_Celik
+  id: 112411892438459287
 ---
 Since getting myself a raspbery pi 5 and getting a proper internet infrastructure 
 at home i wanted to get into some form of selfhosting.
