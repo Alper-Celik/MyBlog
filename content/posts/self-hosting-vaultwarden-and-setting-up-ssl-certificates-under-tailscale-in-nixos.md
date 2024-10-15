@@ -1,6 +1,10 @@
 ---
 title: Self Hosting Vaultwarden and Setting up SSL Certificates under Tailscale in Nixos
 date: 2024-10-15
+comments:
+  host: infosec.exchange
+  username: Alper_Celik
+  id: 113311051453017156 
 ---
 
 I have been using [pass][pass] but since i am experimenting with selfhosting and 
