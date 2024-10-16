@@ -84,7 +84,7 @@ and that was it. I now had a bit more polished password manager that i hosted. I
 
 [pass]:https://www.passwordstore.org/
 [vaultwarden]:https://github.com/dani-garcia/vaultwarden
-[bitwardem]:https://bitwarden.com/
+[bitwarden]:https://bitwarden.com/
 [tailscale]:https://bitwarden.com/
 [rpi5]:https://www.raspberrypi.com/products/raspberry-pi-5/
 [nixos]:https://nixos.org/
