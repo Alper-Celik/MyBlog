@@ -1,68 +1,68 @@
 <footer>
   <br />
   <!-- comments -->
-{{ with .Params.comments }}
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/2.4.1/purify.min.js" integrity="sha512-uHOKtSfJWScGmyyFr2O2+efpDx2nhwHU2v7MVeptzZoiC7bdF6Ny/CmZhN2AwIK1oCFiVQQ5DA/L9FSzyPNu6Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  {{ with .Params.comments }}
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/2.4.1/purify.min.js"
+    integrity="sha512-uHOKtSfJWScGmyyFr2O2+efpDx2nhwHU2v7MVeptzZoiC7bdF6Ny/CmZhN2AwIK1oCFiVQQ5DA/L9FSzyPNu6Q=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <script type="module" src="https://cdn.jsdelivr.net/gh/dpecos/mastodon-comments@6fe36e7e308412cc02f26ae1477987a75d32e58f/mastodon-comments.js"></script>
+  <script type="module"
+    src="https://cdn.jsdelivr.net/gh/dpecos/mastodon-comments@6fe36e7e308412cc02f26ae1477987a75d32e58f/mastodon-comments.js"></script>
   <style>
-  a {
-    color: black;
-    text-decoration: underline;
-  }
-  @media (prefers-color-scheme: dark) {
-    mastodon-comments {
-      --font-color: #999FAD;
-      --block-background-color: #1C1E24;
-      --block-border-color: #0E1012;
-    }
     a {
-      color: white;
+      color: black;
       text-decoration: underline;
     }
-  }
+
+    @media (prefers-color-scheme: dark) {
+      mastodon-comments {
+        --font-color: #999FAD;
+        --block-background-color: #1C1E24;
+        --block-border-color: #0E1012;
+      }
+
+      a {
+        color: white;
+        text-decoration: underline;
+      }
+    }
   </style>
-  <mastodon-comments host="{{ .host }}" user="{{ .username }}" tootId="{{ .id }}" ></mastodon-comments>
-  <br/>
-{{ end }}  
+  <mastodon-comments host="{{ .host }}" user="{{ .username }}" tootId="{{ .id }}"></mastodon-comments>
+  <br />
+  {{ end }}
 
   <!-- license -->
   <div class="f:fade-40 f:14">
     <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">
-      <img
-        alt="Creative Commons License"
-        style="border-width: 0"
-        src="https://i.creativecommons.org/l/by/4.0/88x31.png"
-      />
+      <img alt="Creative Commons License" style="border-width: 0"
+        src="https://i.creativecommons.org/l/by/4.0/88x31.png" />
     </a>
     This work by
-    <span
-      xmlns:cc="http://creativecommons.org/ns#"
-      property="cc:attributionName"
-      >Alper Çelik</span
-    >
+    <span xmlns:cc="http://creativecommons.org/ns#" property="cc:attributionName">Alper Çelik</span>
     is licensed under a
-    <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"
-      >Creative Commons Attribution 4.0 International License</a
-    >.
+    <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International
+      License</a>.
   </div>
   <br />
   <div>
-    <a href="{{ .Site.BaseURL }}index.xml">rss feed <a/>
-    <br />
-    <a rel="me" href="https://infosec.exchange/@Alper_Celik">My Fediverse</a>
-  <div/>
-  <br />
+    <a href="{{ .Site.BaseURL }}index.xml">rss feed <a />
+      <br />
+      <a rel="me" href="https://infosec.exchange/@Alper_Celik">My Fediverse</a>
+      <div />
+      <br />
 
 
-  <!-- theme info  -->
-  <div class="f:fade-60 f:12">
-    Theme
-    <a class="f:bold" href="https://github.com/serkodev/holy" _target="_blank"
-      >Holy</a
-    >
-  </div>
+      <!-- theme info  -->
+      <div class="f:fade-60 f:12">
+        Theme
+        <a class="f:bold" href="https://github.com/serkodev/holy" _target="_blank">Holy</a>
+      </div>
 
-  <!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "baf82a9a3d704f91a65c8d562e9e930d"}'></script><!-- End Cloudflare Web Analytics -->
+      <!--  mastodon attiribition  -->
+      <meta name="fediverse:creator" content="@Alper_Celik@infosec.exchange">
+
+      <!-- Cloudflare Web Analytics -->
+      <script defer src='https://static.cloudflareinsights.com/beacon.min.js'
+        data-cf-beacon='{"token": "baf82a9a3d704f91a65c8d562e9e930d"}'></script><!-- End Cloudflare Web Analytics -->
 
 </footer>
